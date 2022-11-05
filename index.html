@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/desktop.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" type="module" defer></script>
+    <script src="./common/validations.js" type="module" defer></script>
+    <title>form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-text-container">
+        <h1><b>Aprende a programar observando a los demás</b></h1>
+        <p class="main-text">
+          Observa como desarrolladores experimentados resuelven problemas en
+          tiempo real. Ver tutoriales con código es genial, pero entender cómo
+          piensan los desarrolladores es invaluable.
+        </p>
+      </div>
+      <div class="get-try">
+        <div class="promo">
+          <h3>
+            <span>Pruébalo gratis por 7 días </span>luego adquiere el plan por
+            $20/mes a partir de entonces
+          </h3>
+        </div>
+        <form id="form">
+          <div>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nombre"
+              autocomplete="off"
+              required
+              pattern="^[a-zA-Z\s]{2,40}"
+            />
+            <img class="icon-error name-icon hidden" src="./images/icon-error.svg" alt="error">
+            <p class="error hidden" id="name-error"></p>
+          </div>
+          <div>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Apellido"
+              autocomplete="off"
+              required
+              pattern="^[a-zA-Z\s]{2,40}"
+            />
+            <img class="icon-error lastname-icon hidden" src="./images/icon-error.svg" alt="error">
+            <p class="error hidden" id="lastname-error"></p>
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Correo Electrónico"
+              autocomplete="off"
+              required
+              pattern="^.{2,40}"
+            />
+            <img class="icon-error email-icon hidden" src="./images/icon-error.svg" alt="error">
+            <p class="error hidden" id="email-error"></p>
+          </div>
+          <div>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Contraseña"
+              autocomplete="off"
+              required
+              pattern="^.{2,40}"
+            />
+            <img class="icon-error password-icon hidden" src="./images/icon-error.svg" alt="error">
+            <p class="error hidden" id="password-error">error</p>
+          </div>
+          <input type="submit" value="COMIENZA TU PRUEBA" id="submit" />
+          <h5>
+            Dando click en el botón aceptas nuestros
+            <a href="">términos y condiciones</a>
+          </h5>
+        </form>
+      </div>
+    </div>
+    <div class="cards">
+    </div>
+  </body>
+</html>

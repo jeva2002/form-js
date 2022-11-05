@@ -1,0 +1,162 @@
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-text-container {
+    width: 100vw;
+    height: 40vh;
+    text-align: center;
+    padding: 1vh;
+    padding-top: 5vh;
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .main-text {
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  .get-try {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .promo {
+    background-color: #5d54a3;
+    width: 90vw;
+    padding: 1rem;
+  }
+
+  h3 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  h3 span {
+    font-weight: 600;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffffff;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    width: 90vw;
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+
+  input {
+    width: 75vw;
+    height: 5vh;
+    text-align: left;
+    padding-left: 35px;
+    font-size: 18px;
+    border: 1.5px solid #e4e4e4;
+    font-family: 'Poppins', sans-serif;
+    color: #55545a;
+    font-weight: 500;
+  }
+
+  #submit {
+    background-color: #37cc8a;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  h1, p, h3, #submit {
+    color: #ffffffff;
+  }
+
+  h5 {
+    color: #d0ceda;
+    font-size: 15px;
+    padding: 15px;
+    padding-top: 0;
+    font-weight: 600;
+  }
+  
+  h5 a {
+    color: #eea3a5;
+    text-decoration: none;
+  } 
+
+  .modal {
+    background-color:#76b5c5;
+    position: absolute;
+    top: 20%;
+    left: 9%;
+    width: 80vw;
+    min-height: 60vh;
+    padding: 20px;
+  }
+
+  .close {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    left: 25vw;
+    margin-top: 20px;
+    border: none;
+    font-size: 20px;
+    color: #76b5c5;
+  }
+
+  .modal-title {
+    text-align: center;
+    padding-top: 2rem;
+    color: #ffffffff;
+  }
+
+  .cards {
+    margin-left: 20vw;
+    margin-top: 50px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .card {
+    background-color: #ffffffff;
+    min-width: 250px;
+    min-height: 375px;
+    display: flex;
+    flex-direction: column;
+    place-items: center center;
+    gap: 20px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    background-color: #37cc8a;
+    min-width: 18rem;
+    min-height: 9rem;
+    padding: 15px;
+  }
+}
