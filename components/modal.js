@@ -7,7 +7,7 @@ export const createModal = (_id, _nombre) => {
   title.classList.add("modal-title");
   const paragraph = document.createElement("p");
   paragraph.classList.add("modal-paragraph");
-  paragraph.innerText = `A partir de este momento podrás hacer uso de nuestra plataforma completamente gratis por 7 días, estamos seguros aprovecharás y quedarás prendado de nuestra plataforma! Tu número de usuario a partir de este momento es ${_id}.`;
+  paragraph.innerText = `A partir de este momento podrás hacer uso de nuestra plataforma completamente gratis por 7 días, estamos seguros de que aprovecharás y quedarás prendado de nuestra plataforma! Tu número de usuario a partir de este momento es ${_id}.`;
   const button = document.createElement("button");
   button.classList.add("close");
   button.innerHTML = "Vamos";
